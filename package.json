@@ -22,7 +22,14 @@
     "@auth/drizzle-adapter": "^1.7.0",
     "bcryptjs": "^2.4.3",
     "resend": "^4.0.0",
-    "stripe": "^17.0.0"
+    "stripe": "^17.0.0",
+    "next-auth/react": "latest",
+    "crypto": "latest",
+    "drizzle-kit": "latest",
+    "next-auth/providers": "latest",
+    "drizzle-orm/neon-http": "latest",
+    "drizzle-orm/pg-core": "latest",
+    "tailwindcss": "latest"
   },
   "devDependencies": {
     "typescript": "^5.6.0",
