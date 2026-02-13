@@ -1,0 +1,38 @@
+{
+  "name": "workflowdebugger---visual-debugging-and-maintenance-platform-for-multi-step-automation-workflows",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "drizzle-orm": "^0.35.0",
+    "@neondatabase/serverless": "^0.10.0",
+    "next-auth": "^5.0.0-beta.25",
+    "@auth/drizzle-adapter": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "resend": "^4.0.0",
+    "stripe": "^17.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "drizzle-kit": "^0.26.0",
+    "dotenv": "^16.4.0",
+    "@types/bcryptjs": "^2.4.6"
+  }
+}
