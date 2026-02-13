@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
             if (user?.email) {
               const { sendSubscriptionEmail } = await import('@/lib/email');
               const planName = sub.items?.data?.[0]?.price?.nickname || 'Pro';
-              await sendSubscriptionEmail(user.email, planName);
+              await sendSubscriptionEmail(user.email, 'created', planName);
             }
           } catch (e) { console.warn('[webhook] Subscription email failed:', e); }
         }
