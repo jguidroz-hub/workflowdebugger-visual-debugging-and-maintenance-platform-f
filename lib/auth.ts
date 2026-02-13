@@ -12,7 +12,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     accountsTable: accounts,
     sessionsTable: sessions,
     verificationTokensTable: verificationTokens,
-  }) as any,
+  } as any) as any,
   providers: [
     Credentials({
       id: 'credentials',
