@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface WorkflowsDetailItem
+interface WorkflowsDetailItem {
   id: string;
   title?: string;
   status?: string;
@@ -10,7 +10,7 @@ interface WorkflowsDetailItem
   [key: string]: any;
 }
 
-export default function WorkflowsDetailPage
+export default function WorkflowsDetailPage() {
   const [items, setItems] = useState<WorkflowsDetailItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
