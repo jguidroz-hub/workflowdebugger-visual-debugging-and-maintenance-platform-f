@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface Workflows/[id]Item {
+interface WorkflowsDetailItem
   id: string;
   title?: string;
   status?: string;
@@ -10,8 +10,8 @@ interface Workflows/[id]Item {
   [key: string]: any;
 }
 
-export default function Workflows/[id]Page() {
-  const [items, setItems] = useState<Workflows/[id]Item[]>([]);
+export default function WorkflowsDetailPage
+  const [items, setItems] = useState<WorkflowsDetailItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
   const [newTitle, setNewTitle] = useState('');
@@ -39,7 +39,7 @@ export default function Workflows/[id]Page() {
   };
 
   const handleDelete = async (id: string) => {
-    await fetch(`/api/workflows/[id]/${id}`, { method: 'DELETE' });
+    await fetch(`/ApiWorkflowsDetail/${id}`, { method: 'DELETE' });
     setItems(prev => prev.filter(i => i.id !== id));
   };
 
