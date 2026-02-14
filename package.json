@@ -25,7 +25,8 @@
     "react-dom": "^19.0.0",
     "resend": "^4.0.0",
     "stripe": "^17.0.0",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "jose": "^5.0.0"
   },
   "devDependencies": {
     "typescript": "^5.6.0",

@@ -41,7 +41,7 @@ export default function SettingsPage() {
       <header className="bg-white border-b px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/dashboard" className="text-gray-500 hover:text-gray-700">← Back</Link>
-          <h1 className="font-bold">{productName} Settings</h1>
+          <h1 className="font-bold">Workflowdebugger Visual Debugging Settings</h1>
         </div>
         <button onClick={handleSave} className={`px-4 py-2 rounded-lg text-sm font-medium ${saved ? 'bg-green-600 text-white' : 'bg-black text-white hover:bg-gray-800'}`}>
           {saved ? '✓ Saved' : 'Save Changes'}
